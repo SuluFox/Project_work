@@ -76,4 +76,5 @@ Joined_on,
 Email
 
 
+# executable file is in the out/artifact directory 
 
