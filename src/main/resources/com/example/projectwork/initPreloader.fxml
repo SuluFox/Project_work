@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: linear-gradients(to left bottom,  #e96151,#e4d7ca);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectwork.InitPreloader">
+   <children>
+      <Label layoutY="216.0" prefHeight="20.0" prefWidth="601.0" text="loading...." AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <ImageView fitHeight="157.0" fitWidth="246.0" layoutX="223.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ring.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

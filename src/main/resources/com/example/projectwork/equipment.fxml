@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectwork.EquipmentController">
+   <top>
+      <Pane prefHeight="85.0" prefWidth="631.0" style="-fx-background-color: #e96151;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="25.0" prefHeight="35.0" prefWidth="173.0" text="EQUIPMENTS" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <ImageView fx:id="brandingImageView" fitHeight="85.0" fitWidth="99.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gymlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="390.0" prefWidth="769.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="equipviews" layoutX="9.0" layoutY="7.0" prefHeight="336.0" prefWidth="752.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="7.0">
+              <columns>
+                <TableColumn fx:id="idcolumn" prefWidth="67.0" text="ID" />
+                <TableColumn fx:id="equiptypecolumn" prefWidth="191.0" text="Equipment Type" />
+                  <TableColumn fx:id="numofequipcolumn" prefWidth="173.0" text="Number of Equipments" />
+              </columns>
+            </TableView>
+            <TextField fx:id="keywordTextField" alignment="CENTER" layoutX="202.0" layoutY="356.0" prefHeight="33.0" prefWidth="339.0" promptText="Keyword....." style="-fx-background-color: white;" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="228.0" />
+            <Label alignment="CENTER" layoutX="122.0" layoutY="358.0" prefHeight="30.0" prefWidth="73.0" text="Search">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="21.0" layoutY="358.0" mnemonicParsing="false" onAction="#previousPage" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <Pane prefHeight="176.0" prefWidth="769.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="101.0" layoutY="16.0" text="Equipment type">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="101.0" layoutY="61.0" text="Number of Equipments">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="equiptypetxd" layoutX="271.0" layoutY="13.0" promptText="Equipment Type" style="-fx-background-color: white;" />
+            <TextField fx:id="numofequiptxd" layoutX="271.0" layoutY="55.0" promptText="Number of Equipments" style="-fx-background-color: white;" />
+            <Button fx:id="clearbtn" layoutX="308.0" layoutY="103.0" mnemonicParsing="false" onAction="#clearFeilds" prefHeight="30.0" prefWidth="83.0" text="Clear" textFill="#1e1111" />
+            <Button fx:id="addbtn" layoutX="96.0" layoutY="104.0" mnemonicParsing="false" onAction="#addEquipmentOnAction" prefHeight="30.0" prefWidth="79.0" text="Add" textFill="#1e1111" />
+            <Button fx:id="delbtn" layoutX="187.0" layoutY="103.0" mnemonicParsing="false" onAction="#deleteEquipmentOnAction" prefHeight="30.0" prefWidth="78.0" text="Delete" textFill="#1e1111" />
+            <Button fx:id="updatebtn" layoutX="401.0" layoutY="103.0" mnemonicParsing="false" onAction="#updateEquipOnAction" prefHeight="30.0" prefWidth="79.0" text="Update" textFill="#1e1111" />
+            <Label fx:id="statusLabel" alignment="CENTER" layoutX="503.0" layoutY="39.0" prefHeight="34.0" prefWidth="238.0" style="-fx-text-fill: red;" textFill="#ee0606">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

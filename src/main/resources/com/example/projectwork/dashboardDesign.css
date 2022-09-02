@@ -1,0 +1,191 @@
+
+
+.navbar{
+    
+    -fx-background-color:linear-gradient(to bottom right,  #e96151, #662d60);
+    
+}
+.footerbar{
+     -fx-background-color:linear-gradient(to bottom right,#662d60,  #e96151 );
+}
+
+.card-top{
+    
+    -fx-background-color:linear-gradient(to bottom right,  #e96151, #662d60);
+    
+}
+
+
+.navbutton{
+    
+    -fx-background-color:linear-gradient(to bottom right, rgba(121, 172, 255, 0.2), rgba(255, 106, 239, 0.2));
+    -fx-cursor:hand;
+    -fx-alignment:CENTER-LEFT;
+    
+}
+
+
+
+
+
+.midmiddle{
+-fx-background-image:url('fitness-people.png');
+-fx-background-size:cover;
+
+}
+.loginbackground{
+-fx-background-image:url('trainers-exercise-gym.png');
+-fx-background-size:cover;
+}
+.usersbackground{
+-fx-background-image:url('training-athlete-crossfit.png');
+-fx-background-size:cover;
+}
+.trianersbackground{
+-fx-background-image:url('fitness-woman-lifting.png');
+-fx-background-size:cover;
+}
+
+
+
+.card-dashboard1{
+    
+    -fx-background-color:linear-gradient(to bottom left, #3b6396, #5987bf);
+    -fx-background-radius:20px;
+    
+}
+
+.card-dashboard2{
+    
+    -fx-background-color:linear-gradient(to bottom left, #29825e, #47ae83);
+    -fx-background-radius:20px;
+    
+}
+
+.card-dashboard3{
+    
+    -fx-background-color:linear-gradient(to bottom left, #7f308c, #b451c5);
+    -fx-background-radius:20px;
+    
+}
+
+.card-dashboard4{
+    
+    -fx-background-color:linear-gradient(to bottom left, #ae2859, #cc4677);
+    -fx-background-radius:20px;
+    
+}
+
+
+.label-record-design{
+    
+    -fx-background-color:transparent;
+    -fx-background-radius:10px;
+    -fx-border-color:linear-gradient(to bottom left, #517ab5, #ae44a5);
+    -fx-border-radius:10px;
+    -fx-font-size:15px;
+    -fx-padding:2px 2px 2px 10px;
+    
+}
+
+.chartNav-Bar{
+    
+    -fx-background-color:linear-gradient(to bottom right, #2f466b, #662d60);
+    
+}
+
+.chart-Button{
+    
+    -fx-background-color:linear-gradient(to bottom right, rgba(121, 172, 255, 0.2), rgba(255, 106, 239, 0.2));
+    -fx-cursor:hand;
+    
+}
+
+.chart-Button:hover{
+    
+    -fx-background-color:linear-gradient(to bottom right, rgba(121, 172, 255, 0.6), rgba(255, 106, 239, 0.6));
+    
+}
+
+.showChart-Button{
+    
+    -fx-background-color:#333;
+    -fx-background-radius:20px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:18px;
+    
+}
+
+.showChart-Button:hover{
+    
+    -fx-background-color:linear-gradient(to bottom left, #517ab5, #ae44a5);
+    
+}
+
+.button
+{
+-fx-background-color :  #e96151;
+}
+.button:hover
+{
+-fx-background-color : #A1C1F4 ;
+}
+.button:pressed
+{
+-fx-background-color : #73A3EF ;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:   #2D75E8;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+

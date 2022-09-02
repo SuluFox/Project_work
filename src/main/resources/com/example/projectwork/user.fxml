@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+   <top>
+      <Pane prefHeight="85.0" prefWidth="631.0" style="-fx-background-color: #e96151;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="25.0" prefHeight="35.0" prefWidth="117.0" text="USERS" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <ImageView fx:id="brandingImageView" fitHeight="85.0" fitWidth="99.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gymlogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="236.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="adduserbutton" layoutX="47.0" layoutY="99.0" mnemonicParsing="false"  prefHeight="112.0" prefWidth="127.0" text="Add Users" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="368.0" prefWidth="214.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="deleteuserbutton" layoutX="65.0" layoutY="94.0" mnemonicParsing="false"  prefHeight="112.0" prefWidth="127.0" text="Delete User" />
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="viewuserbutton" layoutX="48.0" layoutY="92.0" mnemonicParsing="false"  prefHeight="112.0" prefWidth="127.0" text="View Users" />
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <Pane prefHeight="111.0" prefWidth="631.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="75.0" layoutY="41.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="65.0" text="Back" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

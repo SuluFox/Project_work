@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1080.0" stylesheets="@dashboardDesign.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectwork.TrainerController">
+   <children>
+      <TabPane prefHeight="713.0" prefWidth="1368.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Trainers">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="660.0" prefWidth="1358.0">
+                     <children>
+                        <HBox layoutX="321.0" prefHeight="628.0" prefWidth="1035.0">
+                           <children>
+                              <TableView fx:id="trainerTableView" onSort="#Refresh" prefHeight="645.0" prefWidth="1035.0">
+                                 <columns>
+                                    <TableColumn fx:id="traineridTableColumn" prefWidth="75.0" text="Trainer_Id" />
+                                    <TableColumn fx:id="firstnameTableColumn" prefWidth="161.0" text="First_Name" />
+                                    <TableColumn fx:id="lastnameTableColumn" prefWidth="165.0" text="Last_Name" />
+                                    <TableColumn fx:id="phonenumberTableColumn" prefWidth="140.0" text="Phone_Number" />
+                                    <TableColumn fx:id="emailTableColumn" prefWidth="132.0" text="Email" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="-1.0" layoutY="92.0" prefHeight="431.0" prefWidth="320.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Pane prefHeight="392.0" prefWidth="300.0" styleClass="trianersbackground" stylesheets="@dashboardDesign.css">
+                                 <children>
+                                    <Button fx:id="Add" layoutX="74.0" layoutY="261.0" mnemonicParsing="false" onAction="#addTrainersPageOnAction" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: lightgreen;" text="Add New  Member" />
+                                    <Button fx:id="clearButton" layoutX="26.0" layoutY="306.0" mnemonicParsing="false" onAction="#ClearButtonOnAction" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: violet;" text="Clear" />
+                                    <Button fx:id="refresh" layoutX="28.0" layoutY="350.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="31.0" prefWidth="97.0" style="-fx-background-color: yellow;" text="Refresh" />
+                                    <Button fx:id="delete" layoutX="172.0" layoutY="306.0" mnemonicParsing="false" onAction="#deleteTrainersOnAction" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: red;" text="Delete" />
+                                    <Button fx:id="update" layoutX="171.0" layoutY="350.0" mnemonicParsing="false" onAction="#updateTrainerOnAction" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: Orange;" text="Update" />
+                                    <TextField fx:id="emailTextField" layoutY="214.0" prefHeight="38.0" prefWidth="300.0" promptText="name@email.com" />
+                                    <TextField fx:id="phoneNumberTextField" layoutX="1.0" layoutY="164.0" prefHeight="40.0" prefWidth="300.0" promptText="Phone number" />
+                                    <TextField fx:id="lastnameTextField" layoutX="1.0" layoutY="116.0" prefHeight="39.0" prefWidth="300.0" promptText="Last Name" />
+                                    <TextField fx:id="firstnameTextField" layoutY="66.0" prefHeight="40.0" prefWidth="300.0" promptText="First Name" />
+                                    <Label alignment="CENTER" contentDisplay="TOP" layoutY="2.0" prefHeight="31.0" prefWidth="300.0" text="Enter Trainer Details">
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="1.0" prefHeight="111.0" prefWidth="318.0">
+                           <children>
+                              <Label layoutX="121.0" layoutY="21.0" text="Search">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="brandingImageView" fitHeight="63.0" fitWidth="69.0" layoutX="14.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gymlogo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <TextField fx:id="keywordTextField" layoutX="8.0" layoutY="62.0" prefHeight="30.0" prefWidth="293.0" promptText="Keywords....." />
+                        <Pane layoutX="3.0" layoutY="515.0" prefHeight="141.0" prefWidth="310.0">
+                           <children>
+                              <Label fx:id="LabelconfirmationMessage" alignment="CENTER" layoutX="6.0" layoutY="52.0" prefHeight="72.0" prefWidth="300.0" textFill="#e53e0b">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="selection" layoutX="133.0" layoutY="86.0" prefHeight="14.0" prefWidth="0.0" textFill="WHITE" />
+                              <Button fx:id="Back" layoutX="5.0" layoutY="6.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="38.0" prefWidth="70.0" style="-fx-background-color: blue;" text="Back" textFill="#fffefe" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

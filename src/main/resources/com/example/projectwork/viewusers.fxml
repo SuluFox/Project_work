@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectwork.ViewUsersController">
+   <children>
+      <TableView fx:id="userTableView" layoutX="10.0" layoutY="71.0" prefHeight="502.0" prefWidth="1060.0">
+        <columns>
+          <TableColumn fx:id="useridTableColumn" prefWidth="75.0" text="User_Id" />
+          <TableColumn fx:id="firstnameTableColumn" prefWidth="108.0" text="First_Name" />
+            <TableColumn fx:id="lastnameTableColumn" prefWidth="96.0" text="Last_Name" />
+            <TableColumn fx:id="ageTableColumn" prefWidth="55.0" text="Age" />
+            <TableColumn fx:id="genderTableColumn" prefWidth="73.0" text="Gender" />
+            <TableColumn fx:id="dateofbirthTableColumn" prefWidth="184.0" text="Date_of_Birth" />
+            <TableColumn fx:id="phonenumberTableColumn" minWidth="4.0" prefWidth="132.0" text="Phone_Number" />
+            <TableColumn fx:id="joinedonTableColumn" prefWidth="154.0" text="Joined_on" />
+            <TableColumn fx:id="emailTableColumn" prefWidth="181.0" text="Email" />
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="33.0" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keywordTextField" layoutX="91.0" layoutY="31.0" prefHeight="30.0" prefWidth="978.0" promptText="Keywords....." />
+   </children>
+</Pane>
